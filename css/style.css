@@ -18,6 +18,7 @@ header *{
 header .logo{
 float: left;
 height: inherit;
+
 }
 
 header .logo-text{
@@ -87,3 +88,54 @@ header .menu-toggle{
     display: none;
 }
 
+/* MEDIA QUERIES */
+@media only screen and (max-width:773px){
+    header{
+        position: relative;
+    }
+    header ul {
+    width: 100%;
+    background-color: #00bef3;
+    max-height: 0px;
+    overflow: hidden;
+   
+    }
+
+    .showing{
+        max-height: 100em;
+
+    }
+
+    header ul li{
+        width: 100%;
+    }
+
+    header ul li ul{
+        position: static;
+        width: 100%;
+        display: block;
+        }
+        header ul li ul li a{
+            color:#ffffff;
+            padding: 10px;
+            background-color: #00bef3;
+            padding-left: 50px;
+        }
+
+        header ul li ul li a:hover{
+            background: #078aae;
+        }
+
+        header ul li ul li a.logout{
+            color: red;
+        }
+        header .menu-toggle{
+            display: block;
+            position: absolute;
+            right: 20px;
+            top: 18px;
+            font-size: 1.9em;
+        }
+
+
+}
